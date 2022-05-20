@@ -6,8 +6,11 @@ AOS.init({
     mirror: true,
     once: true,
 });
+
 Array.from(document.querySelectorAll('.portfolio__item1')).forEach((el) => {
+    
     const imgs = Array.from(el.querySelectorAll('img'));
+    
     new hoverEffect({
         parent: el,
         intensity: el.dataset.intensity || undefined,
@@ -36,7 +39,6 @@ Array.from(document.querySelectorAll('.portfolio__item1')).forEach((el) => {
             parent: document.querySelector('.portfolio__item2'),
             imagesRatio: 2 / 1,
             intensity: 0.3,
-            
             image1: 'img/works/guitar.jpg',
             image2: 'img/guitarweb.jpg',
             displacementImage: 'img/3.jpg'
@@ -44,7 +46,7 @@ Array.from(document.querySelectorAll('.portfolio__item1')).forEach((el) => {
 
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close');
+      closeElem = document.querySelector('.menu__close,');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');

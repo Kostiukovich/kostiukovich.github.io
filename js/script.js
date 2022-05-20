@@ -46,7 +46,7 @@ Array.from(document.querySelectorAll('.portfolio__item1')).forEach((el) => {
 
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      closeElem = document.querySelector('.menu__close,');
+      closeElem = document.querySelector('.menu__close');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');

@@ -2,7 +2,10 @@ Splitting();
 ScrollOut({
    targets: '[data-splitting]'
 });
-AOS.init();
+AOS.init({
+    mirror: true,
+    once: true,
+});
 Array.from(document.querySelectorAll('.portfolio__item1')).forEach((el) => {
     const imgs = Array.from(el.querySelectorAll('img'));
     new hoverEffect({

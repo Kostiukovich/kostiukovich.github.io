@@ -77,7 +77,7 @@ var form = document.getElementById("my-form");
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Дякую! Лист отримав!";
           form.reset()
         } else {
           response.json().then(data => {
@@ -93,3 +93,5 @@ var form = document.getElementById("my-form");
       });
     }
     form.addEventListener("submit", handleSubmit)
+    
+

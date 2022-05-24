@@ -89,12 +89,12 @@ var form = document.getElementById("my-form");
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Упс! Є проблеми з прийняття Вашого повідомлення!"
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Упс! Є проблеми з прийняття Вашого повідомлення!"
       });
     }
     form.addEventListener("submit", handleSubmit)

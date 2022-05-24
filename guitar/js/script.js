@@ -15,6 +15,7 @@ $(document).ready(function(){
         } );
     } );
     $('.custom_inner').slick({
+        
         dots: true,
         appendDots: '.custom_inner_wrapper_text_descr',
         arrows: false,
